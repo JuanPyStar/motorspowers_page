@@ -1,0 +1,237 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2e2e2e;
+    color: white;
+    padding: 20px;
+    margin: 0; /* Elimina el margen superior e inferior */
+}
+
+h1 i {
+    margin-right: 10px;
+}
+
+nav {
+    background-color:  #2e2e2e; /* Color de fondo del nav */
+    color: #ffffff; /* Color del texto del nav */
+    padding: 1rem 0; /* Espaciado interno del nav */
+    border-bottom: 2px solid #ccc; /* Borde inferior */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
+    margin-bottom: -2px; /* Ajusta el espacio entre nav y header */
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 10px;
+    transition: transform 0.3s ease; /* Agrega una transición */
+}
+
+nav li:hover {
+    transform: translateY(-3px); /* Desplaza ligeramente hacia arriba al pasar el mouse */
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff; /* Color del texto de los enlaces */
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transición para el color de fondo y el color del texto */
+}
+
+nav a:hover {
+    background-color: #8a8a8a; /* Cambia el color de fondo al pasar el mouse */
+}
+
+.contenedor {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2rem;
+}
+
+p {
+    text-align: justify;
+    margin-bottom: 2rem;
+}
+
+.contenedor img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 2rem;
+    border-radius: 10px;
+}
+
+.transicion {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2rem;
+}
+
+.transicion img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 2rem;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.transicion img:hover {
+    transform: scale(1.03);
+}
+
+footer {
+    background-color:  #2e2e2e;
+    color: #ffffff;
+    padding: 20px 0;
+    position: relative;
+    margin-top: auto;
+    margin-bottom: 0;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.footer-title {
+    position: absolute;
+    bottom: 50px;
+    right: 20px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: left;
+    margin-left: 20px;
+}
+
+.footer-left,
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+.footer-section {
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+}
+
+h3 i {
+    margin-right: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 3px;
+    transition: transform 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.footer-section ul li:hover {
+    transform: translateY(-5px);
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: none;
+    color: #8a8a8a; /* Cambia el color al pasar el mouse */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 24px;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .contenedor {
+        padding: 1rem;
+    }
+
+    .transicion {
+        padding: 1rem;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-left, .footer-right {
+        margin: 10px 0;
+    }
+
+    .footer-title {
+        bottom: 20px;
+        right: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav a {
+        padding: 0.3rem 0.5rem;
+    }
+
+    .contenedor {
+        padding: 0.5rem;
+    }
+
+    .transicion {
+        padding: 0.5rem;
+    }
+
+    .footer-container {
+        padding: 0.5rem;
+    }
+}
+
